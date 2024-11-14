@@ -23,7 +23,7 @@ Nuestro objetivo es crear un sitio web alucinante con las últimas películas en
 ```sh
         npm create vite@latest -- --template vanilla
 ```
-6. Cuando pida el nombre del proyecto escribimos un punto ---> "."
+6. Cuando pida el nombre del proyecto escribimos un punto ---> "." Después selecciona la opción _ignore files and continue_.
 7. Trabaja en la rama develop hasta que termines el proyecto (si trabajáis en equipo utilizad una rama para cada miembro del equipo y vais haciendo merge con develop). 
 8. Haz un merge a la rama `main` cuando tengas la versión definitiva.
 9. Lanza el comando `npm run build` que construirá la versión desplegable en el directorio dist.
