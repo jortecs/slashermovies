@@ -1,0 +1,152 @@
+/* Reset de márgenes y padding */
+* {
+  margin: 0; /* Elimina márgenes predeterminados */
+  padding: 0; /* Elimina padding predeterminado */
+  box-sizing: border-box; /* Incluye bordes y padding en el cálculo del ancho y alto de los elementos */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Passion+One:wght@400;700;900&display=swap');
+
+body {
+  font-family: Arial, sans-serif; /* Fuente base del documento */
+  background-color: #FFFAEE; /* Fondo claro */
+  color: #333; /* Texto oscuro para el cuerpo del documento */
+}
+
+/* Barra de navegación */
+.navbar {
+  display: flex; /* Usamos flexbox para organizar los elementos */
+  justify-content: space-between; /* Espaciamos los elementos (logo y menú) a los extremos */
+  align-items: center; /* Centramos verticalmente los elementos */
+  padding: 10px 20px; /* Espaciado interno: 10px arriba/abajo, 20px izquierda/derecha */
+  background-color: #121212; /* Fondo oscuro para la barra */
+  color: white; /* Texto blanco */
+  
+}
+
+.navbar-logo img {
+  width: 100px; /* Tamaño del logo */
+}
+
+.navbar-menu {
+  list-style: none; /* Quitamos los puntos de la lista */
+  display: flex; /* Los elementos del menú se organizan en fila */
+  gap: 20px; /* Espaciado horizontal entre los elementos */
+}
+
+.navbar-menu li a {
+  color: red; /* Color rojo para los enlaces */
+  text-decoration: none; /* Quitamos el subrayado de los enlaces */
+  font-size: 18px; /* Tamaño de fuente de los enlaces */
+  transition: color 0.3s; /* Suaviza el cambio de color al hacer hover */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+
+.navbar-menu li a:hover {
+  color: #007bff; /* Cambia a azul al pasar el cursor sobre un enlace */
+}
+
+/* Lista de películas */
+ul {
+  list-style: none; /* Quitamos los puntos de la lista */
+  display: grid; /* Usamos un diseño de cuadrícula */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Distribuye columnas adaptativas con un mínimo de 200px */
+  gap: 20px; /* Espaciado entre los elementos de la cuadrícula */
+  padding: 20px; /* Espaciado interno del contenedor */
+}
+
+/* Tarjeta de película */
+.movie-item {
+  background: white; /* Fondo blanco para cada tarjeta */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  padding: 15px; /* Espaciado interno */
+  text-align: center; /* Centra el contenido del texto */
+  transition: transform 0.3s; /* Suaviza la animación de escala al hacer hover */
+  cursor: pointer; /* Cambia el cursor a una mano indicando que es clicable */
+}
+
+.movie-item:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
+}
+
+.movie-item img {
+  width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+  border-radius: 8px; /* Bordes redondeados para las imágenes */
+  margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.movie-item h2 {
+  font-size: 18px; /* Tamaño del título */
+  margin: 10px 0; /* Espaciado superior e inferior */
+}
+
+.movie-item p {
+  font-size: 14px; /* Tamaño del texto de descripción */
+  color: #555; /* Color gris oscuro */
+  margin: 5px 0; /* Espaciado entre párrafos */
+}
+
+/* Contenedor de detalle de película */
+.movie-detail-container {
+  display: flex; /* Usamos flexbox para organizar los detalles */
+  flex-direction: column; /* Organiza los elementos en una columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  padding: 20px; /* Espaciado interno */
+}
+
+.movie-detail {
+  display: flex; /* Usamos flexbox para organizar los detalles */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten si no caben */
+  gap: 20px; /* Espaciado entre elementos */
+  max-width: 800px; /* Ancho máximo del contenedor */
+  background: white; /* Fondo blanco */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+.movie-detail-poster {
+  max-width: 300px; /* Ancho máximo para la imagen del póster */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.movie-detail-info {
+  flex: 1; /* Ocupa el espacio restante en el contenedor flex */
+  display: flex; /* Usamos flexbox dentro del contenedor de detalles */
+  flex-direction: column; /* Organiza los elementos en columna */
+  justify-content: center; /* Centra los elementos verticalmente */
+}
+
+.movie-detail-info h1 {
+  font-size: 24px; /* Tamaño del título */
+  margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.movie-detail-info p {
+  font-size: 16px; /* Tamaño del texto */
+  margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.trailer-button {
+  background-color: #ffc107; /* Fondo amarillo */
+  color: black; /* Texto negro */
+  padding: 10px 15px; /* Espaciado interno */
+  border: none; /* Quitamos el borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a una mano indicando que es clicable */
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: bold; /* Fuente en negrita */
+  margin-top: 10px; /* Espaciado superior */
+}
+
+.trailer-button:hover {
+  background-color: #e0a800; /* Fondo amarillo más oscuro al pasar el cursor */
+}
+
+.star-icon {
+  width: 20px; /* Ancho del ícono de estrella */
+  vertical-align: middle; /* Alinea verticalmente con el texto */
+}
+
