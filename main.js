@@ -13,7 +13,7 @@ window.addEventListener('load', async () => { // Esperamos a que la página se c
     const title = document.createElement('h2');  // Creamos un elemento `h2` para mostrar el título.
     const image = document.createElement('img');  // Creamos un elemento `img` para mostrar la imagen.
     const overview = document.createElement('p'); // Creamos un párrafo para la descripción breve.
-     
+
     // Asignamos los datos a los elementos creados.
     title.textContent = filmes.title; // Título de la película.
     image.src = `https://image.tmdb.org/t/p/w500/${filmes.poster_path}`; // Póster de la película.
@@ -38,4 +38,20 @@ window.addEventListener('load', async () => { // Esperamos a que la página se c
 
   // Agregamos el `ul` al contenedor principal de la página.
   document.getElementById('app').appendChild(listado);
+});
+
+
+
+// Selecciona el botón de subir
+const scrollToTopBtn = document.getElementById('scrollToTop');
+
+// Detecta el evento de clic en el botón
+scrollToTopBtn.addEventListener('click', (event) => {
+  event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+
+  // Desplaza la página hacia arriba suavemente
+  window.scrollTo({
+    top: 0, // Posición superior de la página
+    behavior: 'smooth' // Desplazamiento suave
+  });
 });
