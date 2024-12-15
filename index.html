@@ -4,36 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Películas</title>
-    <link rel="stylesheet" href="styles.css" /> <!-- Enlace al archivo CSS -->
+    <!-- Ruta relativa al archivo CSS -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- Barra de navegación -->
     <nav class="navbar">
       <div class="navbar-logo">
-        <a href="/"><img src="assets/LOGO.png" alt=""></a>
+        <a href="index.html"><img src="assets/LOGO.png" alt="Logo"></a>
       </div>
-     
     </nav>
+
+    <!-- Carrusel de imágenes -->
     <div class="fade-carousel">
       <div class="carousel-label">DESTACADO</div>
-      <div class="carousel-slide"><img src="assets/slide1.png" alt="Slide 2"></div>
-      <div class="carousel-slide"><img src="assets/slide2.png" alt="Slide 3"></div>
-      <div class="carousel-slide"><img src="assets/slide3.png" alt="Slide 4"></div>
+      <div class="carousel-slide"><img src="assets/slide1.png" alt="Slide 1"></div>
+      <div class="carousel-slide"><img src="assets/slide2.png" alt="Slide 2"></div>
+      <div class="carousel-slide"><img src="assets/slide3.png" alt="Slide 3"></div>
       <div class="carousel-slide"><img src="assets/slide4.png" alt="Slide 4"></div>
-      <div class="carousel-slide"><img src="assets/slide5.png" alt="Slide 4"></div>
+      <div class="carousel-slide"><img src="assets/slide5.png" alt="Slide 5"></div>
     </div>
-    
+
     <!-- Contenedor principal -->
     <div id="app"></div>
 
-    <script type="module" src="main.js"></script> <!-- Enlace al archivo JS -->
+    <!-- Scripts con rutas relativas -->
+    <script type="module" src="main.js"></script>
     <script src="carrousel.js"></script>
 
-
-<!-- Botón para subir -->
-<a href="#" id="scrollToTop">
-  <img src="assets/up.png" alt="Subir">
-</a>
-
+    <!-- Botón para subir -->
+    <a href="#" id="scrollToTop">
+      <img src="assets/up.png" alt="Subir">
+    </a>
   </body>
 </html>
