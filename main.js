@@ -1,4 +1,4 @@
-import { getData } from '/api.js'; // Importamos la función `getData` desde el archivo `api.js`.
+import { getData } from './api.js'; // Importamos la función `getData` desde el archivo `api.js`.
 
 window.addEventListener('load', async () => { // Escuchamos el evento `load` para ejecutar el código cuando la página termine de cargar.
   const data = await getData();  // Llamamos a la función `getData` para obtener los datos de películas desde la API.
@@ -29,7 +29,7 @@ window.addEventListener('load', async () => { // Escuchamos el evento `load` par
 
     // Agregamos un evento de clic a cada elemento de la lista para redirigir al detalle de la película.
     listadopeli.addEventListener('click', () => {
-      window.location.href = `/moviedetail.html?id=${filmes.id}`; // Redirigimos a la página de detalle usando el ID de la película.
+      window.location.href = `moviedetail.html?id=${filmes.id}`; // Redirigimos a la página de detalle usando el ID de la película.
     });
 
     // Agregamos el elemento `li` (con todos los datos de la película) al `ul`.
